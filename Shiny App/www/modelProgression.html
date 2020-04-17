@@ -1,0 +1,36 @@
+<ul>
+	<li><h3>Model 1: start with max # of concave points and non-robust</h3>
+		<ul>
+			<li>predictors: concave.points_worst</li>
+			<li>90% test accuracy</li>
+		</ul>
+	</li><br>
+	
+	<li><h3>Model 2: Model 1 + max texture</h3>
+		<ul>
+			<li>predictors: concave.points_worst, texture_worst</li>
+			<li>93% test accuracy</li>
+		</ul>
+	</li><br>
+	
+	<li><h3>Model 3: Model 2 + mean symmetry</h3>
+		<ul>
+			<li>predictors: concave.points_worst, texture_worst, symmetry_mean</li>
+			<li>93% test accuracy</li>
+		</ul>
+	</li><br>
+	
+	<li><h3>Model 4: robust version of Model 2</h3>
+		<ul>
+			<li>predictors: concave.points_worst, texture_worst</li>
+			<li>94% test accuracy</li>
+		</ul>
+	</li><br>
+	
+	<li><h3>Model 5: Model 4 + max radius</h3>
+		<ul>
+			<li>predictors: concave.points_worst, texture_worst, radius_worst</li>
+			<li>96% test accuracy</li>
+		</ul>
+	</li><br>
+</ul>
